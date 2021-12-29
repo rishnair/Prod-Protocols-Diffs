@@ -1,7 +1,7 @@
 {
-	"create_time": "2021-03-23T18:52:46.000Z",
-	"display_name": "Demo Simple Site",
-	"name": "workspaces/jslite-sandbox/tracking-plans/rs_1qAbumNrJVHZzmdYrROxfRL7bMX",
+	"create_time": "2021-12-02T19:28:28.000Z",
+	"display_name": "Dev Tracking Plan",
+	"name": "workspaces/protocols-diffs/tracking-plans/rs_21k7cGxAiOsvxfxBMXdR2Z1iOGr",
 	"rules": {
 		"events": [
 			{
@@ -442,6 +442,34 @@
 				"version": 1
 			},
 			{
+				"name": "Test Event",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"properties": {
+								"Test": {
+									"description": "",
+									"type": "object"
+								},
+								"Test 2": {
+									"description": "",
+									"type": "object"
+								}
+							},
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"name": "Trial Started",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
@@ -579,5 +607,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2021-04-07T22:13:36.000Z"
+	"update_time": "2021-12-29T06:20:02.000Z"
 }
