@@ -457,6 +457,10 @@
 								"Test 2": {
 									"description": "",
 									"type": "object"
+								},
+								"Test 3": {
+									"description": "",
+									"type": "object"
 								}
 							},
 							"type": "object"
@@ -607,5 +611,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2021-12-29T06:20:02.000Z"
+	"update_time": "2021-12-29T07:15:18.000Z"
 }
