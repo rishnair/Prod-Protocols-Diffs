@@ -5,47 +5,7 @@
 	"rules": {
 		"events": [
 			{
-				"name": "Button Clicked",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"button_color": {
-									"type": [
-										"string"
-									]
-								},
-								"button_text": {
-									"type": [
-										"string"
-									]
-								},
-								"button_type": {
-									"type": [
-										"string"
-									]
-								}
-							},
-							"required": [
-								"button_color"
-							],
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"required": [
-						"properties"
-					],
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Cookies Reset",
+				"name": "Fourth Test Event",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -55,6 +15,7 @@
 							"type": "object"
 						},
 						"traits": {
+							"type": "object"
 						}
 					},
 					"type": "object"
@@ -62,320 +23,7 @@
 				"version": 1
 			},
 			{
-				"name": "Email Link Clicked",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"button_clicked_": {
-									"type": [
-										"string"
-									]
-								},
-								"campaign_name": {
-									"type": [
-										"string"
-									]
-								},
-								"email_subject": {
-									"type": [
-										"string"
-									]
-								}
-							},
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Order Completed",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"order_id": {
-									"type": [
-										"integer"
-									]
-								},
-								"payment_method": {
-									"type": [
-										"string"
-									]
-								},
-								"products": {
-									"items": {
-										"properties": {
-											"category": {
-												"type": [
-													"string"
-												]
-											},
-											"duration": {
-												"type": [
-													"string"
-												]
-											},
-											"expiration_date": {
-												"type": [
-													"string"
-												]
-											},
-											"price": {
-												"type": [
-													"integer"
-												]
-											},
-											"quantity": {
-												"type": [
-													"integer"
-												]
-											},
-											"sku": {
-												"type": [
-													"string"
-												]
-											},
-											"start_date": {
-												"type": [
-													"string"
-												]
-											},
-											"variant": {
-												"type": [
-													"string"
-												]
-											}
-										},
-										"type": "object"
-									},
-									"type": "array"
-								},
-								"shipping": {
-									"type": [
-										"integer"
-									]
-								},
-								"tax": {
-									"type": [
-										"integer"
-									]
-								},
-								"total": {
-									"type": [
-										"integer"
-									]
-								}
-							},
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Page Viewed",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"campaign": {
-									"properties": {
-										"source": {
-											"type": [
-												"string"
-											]
-										}
-									},
-									"type": "object"
-								},
-								"name": {
-									"type": [
-										"string"
-									]
-								},
-								"path": {
-									"type": [
-										"string"
-									]
-								},
-								"referrer": {
-									"type": [
-										"string"
-									]
-								},
-								"search": {
-									"type": [
-										"string"
-									]
-								},
-								"title": {
-									"type": [
-										"string"
-									]
-								},
-								"url": {
-									"type": [
-										"string"
-									]
-								},
-								"utm_source": {
-									"type": [
-										"string"
-									]
-								}
-							},
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Product Added",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"category": {
-									"type": [
-										"string"
-									]
-								},
-								"duration": {
-									"type": [
-										"string"
-									]
-								},
-								"expiration_date": {
-									"type": [
-										"string"
-									]
-								},
-								"name": {
-									"type": [
-										"string"
-									]
-								},
-								"price": {
-									"type": [
-										"integer"
-									]
-								},
-								"quantity": {
-									"type": [
-										"integer"
-									]
-								},
-								"sku": {
-									"type": [
-										"string"
-									]
-								},
-								"start_date": {
-									"type": [
-										"string"
-									]
-								},
-								"variant": {
-									"type": [
-										"string"
-									]
-								}
-							},
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Product Viewed",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"category": {
-									"type": [
-										"string"
-									]
-								},
-								"duration": {
-									"type": [
-										"string"
-									]
-								},
-								"expiration_date": {
-									"type": [
-										"string"
-									]
-								},
-								"price": {
-									"type": [
-										"integer"
-									]
-								},
-								"quantity": {
-									"type": [
-										"integer"
-									]
-								},
-								"sku": {
-									"type": [
-										"string"
-									]
-								},
-								"start_date": {
-									"type": [
-										"string"
-									]
-								},
-								"variant": {
-									"type": [
-										"string"
-									]
-								}
-							},
-							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Profile Updated",
+				"name": "Second Test Event",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -385,56 +33,7 @@
 							"type": "object"
 						},
 						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Signed In",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
 							"type": "object"
-						},
-						"traits": {
-						}
-					},
-					"type": "object"
-				},
-				"version": 1
-			},
-			{
-				"name": "Signed Up",
-				"rules": {
-					"$schema": "http://json-schema.org/draft-07/schema#",
-					"properties": {
-						"context": {
-						},
-						"properties": {
-							"properties": {
-								"account_type": {
-									"type": [
-										"string"
-									]
-								},
-								"newprop": {
-									"description": "",
-									"type": "object"
-								},
-								"signup_type": {
-									"type": [
-										"string"
-									]
-								}
-							},
-							"type": "object"
-						},
-						"traits": {
 						}
 					},
 					"type": "object"
@@ -450,19 +49,31 @@
 						},
 						"properties": {
 							"properties": {
-								"Test": {
+								"Test 5": {
 									"description": "",
 									"type": "object"
 								},
-								"Test 2": {
+								"Test 6": {
 									"description": "",
 									"type": "object"
 								},
-								"Test 3": {
+								"Test Property": {
 									"description": "",
 									"type": "object"
 								},
-								"Test 4": {
+								"Test Property 2": {
+									"description": "",
+									"properties": {
+										"Test Property 4": {
+											"description": "",
+											"type": "object"
+										}
+									},
+									"required": [
+									],
+									"type": "object"
+								},
+								"Test Property 3": {
 									"description": "",
 									"type": "object"
 								}
@@ -478,33 +89,17 @@
 				"version": 1
 			},
 			{
-				"name": "Trial Started",
+				"name": "Third Test Event",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
 						"context": {
 						},
 						"properties": {
-							"properties": {
-								"trial_end_date": {
-									"type": [
-										"string"
-									]
-								},
-								"trial_plan_name": {
-									"type": [
-										"string"
-									]
-								},
-								"trial_start_date": {
-									"type": [
-										"string"
-									]
-								}
-							},
 							"type": "object"
 						},
 						"traits": {
+							"type": "object"
 						}
 					},
 					"type": "object"
@@ -527,93 +122,10 @@
 			},
 			"type": "object"
 		},
-		"group": {
-			"$schema": "http://json-schema.org/draft-07/schema#",
-			"properties": {
-				"context": {
-				},
-				"properties": {
-				},
-				"traits": {
-					"properties": {
-						"name": {
-							"type": [
-								"string"
-							]
-						},
-						"primary_account_email": {
-							"type": [
-								"string"
-							]
-						},
-						"subscription": {
-							"type": "object"
-						},
-						"team_type": {
-							"type": [
-								"string"
-							]
-						}
-					},
-					"type": "object"
-				}
-			},
-			"type": "object"
-		},
 		"group_traits": [
 		],
-		"identify": {
-			"$schema": "http://json-schema.org/draft-07/schema#",
-			"properties": {
-				"context": {
-				},
-				"properties": {
-				},
-				"traits": {
-					"properties": {
-						"account_type": {
-							"type": [
-								"string"
-							]
-						},
-						"birthday": {
-							"type": [
-								"string"
-							]
-						},
-						"email": {
-							"type": [
-								"string"
-							]
-						},
-						"favorite_color": {
-							"type": [
-								"string"
-							]
-						},
-						"first_name": {
-							"type": [
-								"string"
-							]
-						},
-						"last_name": {
-							"type": [
-								"string"
-							]
-						},
-						"signup_type": {
-							"type": [
-								"string"
-							]
-						}
-					},
-					"type": "object"
-				}
-			},
-			"type": "object"
-		},
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-01-19T20:45:32.000Z"
+	"update_time": "2022-01-25T19:47:28.000Z"
 }
