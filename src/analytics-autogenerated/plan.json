@@ -41,7 +41,43 @@
 				"version": 1
 			},
 			{
+				"name": "Nothing is Working",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
 				"name": "Second Test Event",
+				"rules": {
+					"$schema": "http://json-schema.org/draft-07/schema#",
+					"properties": {
+						"context": {
+						},
+						"properties": {
+							"type": "object"
+						},
+						"traits": {
+							"type": "object"
+						}
+					},
+					"type": "object"
+				},
+				"version": 1
+			},
+			{
+				"name": "Seventh T",
 				"rules": {
 					"$schema": "http://json-schema.org/draft-07/schema#",
 					"properties": {
@@ -85,10 +121,6 @@
 						},
 						"properties": {
 							"properties": {
-								"Test 5": {
-									"description": "",
-									"type": "object"
-								},
 								"Test 6": {
 									"description": "",
 									"type": "object"
@@ -110,6 +142,10 @@
 									"type": "object"
 								},
 								"Test Property 3": {
+									"description": "",
+									"type": "object"
+								},
+								"Testing": {
 									"description": "",
 									"type": "object"
 								}
@@ -163,5 +199,5 @@
 		"identify_traits": [
 		]
 	},
-	"update_time": "2022-01-25T21:27:35.000Z"
+	"update_time": "2022-01-26T18:18:37.000Z"
 }
